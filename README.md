@@ -10,11 +10,10 @@ on an Ubuntu 20.04 host.
 
 ## Install the installer
 
-Clone repo and init git and Python environments.
+Clone repo and init git and Python environments as root.
 
     cd /opt
     git clone https://github.com/tessercat/pakaa-installer.git installer
-    chown root:root installer
     chmod 0700 installer
     cd installer
 
@@ -22,6 +21,8 @@ Clone repo and init git and Python environments.
     git submodule init
     git submodule update
 
+    apt -y update
+    apt -y install python3-venv
     python3 -m venv venv
     . venv/bin/activate
     pip install --upgrade pip wheel pip-tools
