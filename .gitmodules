@@ -1,0 +1,12 @@
+[submodule "callback_plugins"]
+	path = callback_plugins
+	url = https://github.com/tessercat/mailer.git
+[submodule "stack-deploy"]
+	path = stack-deploy
+	url = https://github.com/tessercat/stack-deploy.git
+[submodule "peers-deploy"]
+	path = peers-deploy
+	url = https://github.com/tessercat/peers-deploy.git
+[submodule "daoistic-deploy"]
+	path = daoistic-deploy
+	url = https://github.com/tessercat/daoistic-deploy.git
