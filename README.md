@@ -31,7 +31,9 @@ Clone repo and init git and Python environments as root.
 
 ## Run the stack playbook
 
-See the `stack-deploy` repo's readme
+See the
+[`stack-deploy`](https://github.com/tessercat/stack-deploy)
+repo's readme
 for more information.
 
 Copy vars from the submodule.
@@ -49,30 +51,11 @@ Run the playbook.
     -e @stack-vars.yml
 
 
-## Run the peers playbook
-
-See the `peers-deploy` repo's readme
-for more information.
-
-Copy vars from the submodule.
-
-    cd /opt/installer
-    cp peers-deploy/peers-vars.yml .
-
-Read and edit the copied vars file.
-
-Run the playbook.
-
-    . venv/bin/activate
-    ansible-playbook peers-deploy/local.yml \
-    -i peers-deploy/hosts \
-    -e @stack-vars.yml \
-    -e @peers-vars.yml
-
-
 ## Run the daoistic playbook
 
-See the `daoistic-deploy` repo's readme
+See the
+[`daoistic-deploy`](https://github.com/tessercat/daoistic-deploy)
+repo's readme
 for more information.
 
 Copy vars from the submodule.
@@ -89,3 +72,26 @@ Run the playbook.
     -i daoistic-deploy/hosts \
     -e @stack-vars.yml \
     -e @daoistic-vars.yml
+
+
+## Run the peers playbook
+
+See the
+[`peers-deploy`](https://github.com/tessercat/peers-deploy)
+repo's readme
+for more information.
+
+Copy vars from the submodule.
+
+    cd /opt/installer
+    cp peers-deploy/peers-vars.yml .
+
+Read and edit the copied vars file.
+
+Run the playbook.
+
+    . venv/bin/activate
+    ansible-playbook peers-deploy/local.yml \
+    -i peers-deploy/hosts \
+    -e @stack-vars.yml \
+    -e @peers-vars.yml
