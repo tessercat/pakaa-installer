@@ -5,7 +5,7 @@
 #    pip-compile requirements-dev.in
 #
 ansible-lint==4.2.0       # via -r requirements-dev.in
-ansible==2.9.7            # via -r requirements-dev.in, ansible-lint
+ansible==2.9.8            # via -r requirements-dev.in, ansible-lint
 cffi==1.14.0              # via cryptography
 cryptography==2.9.2       # via ansible
 jinja2==2.11.2            # via ansible
