@@ -43,9 +43,12 @@ Copy vars from the submodule.
 
 Read and edit the copied vars file.
 
-Run the playbook.
+Activate the venv.
 
     . venv/bin/activate
+
+Run the playbook.
+
     ansible-playbook stack-deploy/local.yml \
     -i stack-deploy/hosts \
     -e @stack-vars.yml
@@ -65,33 +68,39 @@ Copy vars from the submodule.
 
 Read and edit the copied vars file.
 
-Run the playbook.
+Activate the venv.
 
     . venv/bin/activate
+
+Run the playbook.
+
     ansible-playbook daoistic-deploy/local.yml \
     -i daoistic-deploy/hosts \
     -e @stack-vars.yml \
     -e @daoistic-vars.yml
 
 
-## Run the peers playbook
+## Run the PBX playbook
 
 See the
-[`peers-deploy`](https://github.com/tessercat/peers-deploy)
+[`pbx-deploy`](https://github.com/tessercat/pbx-deploy)
 repo's readme
 for more information.
 
 Copy vars from the submodule.
 
     cd /opt/installer
-    cp peers-deploy/peers-vars.yml .
+    cp pbx-deploy/pbx-vars.yml .
 
 Read and edit the copied vars file.
 
-Run the playbook.
+Activate the venv.
 
     . venv/bin/activate
-    ansible-playbook peers-deploy/local.yml \
-    -i peers-deploy/hosts \
+
+Run the playbook.
+
+    ansible-playbook pbx-deploy/local.yml \
+    -i pbx-deploy/hosts \
     -e @stack-vars.yml \
-    -e @peers-vars.yml
+    -e @pbx-vars.yml
