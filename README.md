@@ -5,7 +5,7 @@ a Python environment
 to run Ansible playbooks
 on localhost
 that install my art projects
-on an Ubuntu 20.04 host.
+on a Debian 10 host.
 
 
 ## Install the installer
