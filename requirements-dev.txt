@@ -5,9 +5,9 @@
 #    pip-compile requirements-dev.in
 #
 ansible-lint==4.2.0       # via -r requirements-dev.in
-ansible==2.9.10           # via -r requirements-dev.in, ansible-lint
+ansible==2.9.11           # via -r requirements-dev.in, ansible-lint
 cffi==1.14.0              # via cryptography
-cryptography==2.9.2       # via ansible
+cryptography==3.0         # via ansible
 jinja2==2.11.2            # via ansible
 markupsafe==1.1.1         # via jinja2
 pathspec==0.8.0           # via yamllint
@@ -16,4 +16,4 @@ pyyaml==5.3.1             # via ansible, ansible-lint, yamllint
 ruamel.yaml.clib==0.2.0   # via ruamel.yaml
 ruamel.yaml==0.16.10      # via ansible-lint
 six==1.15.0               # via ansible-lint, cryptography
-yamllint==1.23.0          # via -r requirements-dev.in
+yamllint==1.24.2          # via -r requirements-dev.in
