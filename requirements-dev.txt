@@ -6,7 +6,7 @@
 #
 ansible-lint==4.2.0       # via -r requirements-dev.in
 ansible==2.9.11           # via -r requirements-dev.in, ansible-lint
-cffi==1.14.0              # via cryptography
+cffi==1.14.1              # via cryptography
 cryptography==3.0         # via ansible
 jinja2==2.11.2            # via ansible
 markupsafe==1.1.1         # via jinja2
