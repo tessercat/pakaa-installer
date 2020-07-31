@@ -1,10 +1,10 @@
 # Pakaa installer
 
 This repo is
-a Python environment
+a git and Python environment
 to run Ansible playbooks
 on localhost
-that install my art projects
+that install my hobby projects
 on a Debian 10 host.
 
 
