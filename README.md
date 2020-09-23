@@ -25,7 +25,7 @@ Clone repo and init git and Python environments as root.
     apt -y install python3-venv
     python3 -m venv venv
     . venv/bin/activate
-    pip install --upgrade pip wheel pip-tools
+    pip install --upgrade pip setuptools wheel pip-tools
     pip-sync requirements.txt
 
 
@@ -54,32 +54,6 @@ Run the playbook.
     -e @stack-vars.yml
 
 
-## Run the daoistic playbook
-
-See the
-[`daoistic-deploy`](https://github.com/tessercat/daoistic-deploy)
-repo's readme
-for more information.
-
-Copy vars from the submodule.
-
-    cd /opt/installer
-    cp daoistic-deploy/daoistic-vars.yml .
-
-Read and edit the copied vars file.
-
-Activate the venv.
-
-    . venv/bin/activate
-
-Run the playbook.
-
-    ansible-playbook daoistic-deploy/local.yml \
-    -i daoistic-deploy/hosts \
-    -e @stack-vars.yml \
-    -e @daoistic-vars.yml
-
-
 ## Run the PBX playbook
 
 See the
@@ -104,3 +78,29 @@ Run the playbook.
     -i pbx-deploy/hosts \
     -e @stack-vars.yml \
     -e @pbx-vars.yml
+
+
+## Run the daoistic playbook
+
+See the
+[`daoistic-deploy`](https://github.com/tessercat/daoistic-deploy)
+repo's readme
+for more information.
+
+Copy vars from the submodule.
+
+    cd /opt/installer
+    cp daoistic-deploy/daoistic-vars.yml .
+
+Read and edit the copied vars file.
+
+Activate the venv.
+
+    . venv/bin/activate
+
+Run the playbook.
+
+    ansible-playbook daoistic-deploy/local.yml \
+    -i daoistic-deploy/hosts \
+    -e @stack-vars.yml \
+    -e @daoistic-vars.yml
