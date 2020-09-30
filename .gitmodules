@@ -1,12 +1,16 @@
 [submodule "callback_plugins"]
 	path = callback_plugins
 	url = https://github.com/tessercat/mailer.git
+	branch = stable
 [submodule "stack-deploy"]
 	path = stack-deploy
 	url = https://github.com/tessercat/stack-deploy.git
+	branch = stable
 [submodule "daoistic-deploy"]
 	path = daoistic-deploy
 	url = https://github.com/tessercat/daoistic-deploy.git
+	branch = dev
 [submodule "pbx-deploy"]
 	path = pbx-deploy
 	url = https://github.com/tessercat/pbx-deploy.git
+	branch = stable
