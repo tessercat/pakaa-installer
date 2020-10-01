@@ -13,6 +13,8 @@ on a Debian 10 host.
 Clone repo and init git and Python environments as root.
 
     cd /opt
+    apt -y update
+    apt -y install git python3-venv
     git clone https://github.com/tessercat/pakaa-installer.git installer
     chmod 0700 installer
     cd installer
@@ -21,8 +23,6 @@ Clone repo and init git and Python environments as root.
     git submodule init
     git submodule update
 
-    apt -y update
-    apt -y install python3-venv
     python3 -m venv venv
     . venv/bin/activate
     pip install --upgrade pip setuptools wheel pip-tools
@@ -86,6 +86,8 @@ See the
 [`daoistic-deploy`](https://github.com/tessercat/daoistic-deploy)
 repo's readme
 for more information.
+
+Install unihan source files first.
 
 Copy vars from the submodule.
 
