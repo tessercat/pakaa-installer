@@ -2,3 +2,4 @@ stack-vars.yml
 daoistic-vars.yml
 pbx-vars.yml
 venv
+*.pyc

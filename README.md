@@ -1,4 +1,4 @@
-# Pakaa installer
+# Installer
 
 This repo is
 a git and Python environment
@@ -15,7 +15,7 @@ Clone repo and init git and Python environments as root.
     cd /opt
     apt -y update
     apt -y install git python3-venv
-    git clone https://github.com/tessercat/pakaa-installer.git installer
+    git clone https://github.com/tessercat/installer.git
     chmod 0700 installer
     cd installer
 
@@ -54,32 +54,6 @@ Run the playbook.
     -e @stack-vars.yml
 
 
-## Run the PBX playbook
-
-See the
-[`pbx-deploy`](https://github.com/tessercat/pbx-deploy)
-repo's readme
-for more information.
-
-Copy vars from the submodule.
-
-    cd /opt/installer
-    cp pbx-deploy/pbx-vars.yml .
-
-Read and edit the copied vars file.
-
-Activate the venv.
-
-    . venv/bin/activate
-
-Run the playbook.
-
-    ansible-playbook pbx-deploy/local.yml \
-    -i pbx-deploy/hosts \
-    -e @stack-vars.yml \
-    -e @pbx-vars.yml
-
-
 ## Run the daoistic playbook
 
 See the
@@ -106,3 +80,29 @@ Run the playbook.
     -i daoistic-deploy/hosts \
     -e @stack-vars.yml \
     -e @daoistic-vars.yml
+
+
+## Run the PBX playbook
+
+See the
+[`pbx-deploy`](https://github.com/tessercat/pbx-deploy)
+repo's readme
+for more information.
+
+Copy vars from the submodule.
+
+    cd /opt/installer
+    cp pbx-deploy/pbx-vars.yml .
+
+Read and edit the copied vars file.
+
+Activate the venv.
+
+    . venv/bin/activate
+
+Run the playbook.
+
+    ansible-playbook pbx-deploy/local.yml \
+    -i pbx-deploy/hosts \
+    -e @stack-vars.yml \
+    -e @pbx-vars.yml
