@@ -43,6 +43,10 @@ Copy vars from the submodule.
 
 Read and edit the copied vars file.
 
+A callback plugin
+mails playbook reports
+to the `admin_email` stack var.
+
 Activate the venv.
 
     . venv/bin/activate
